@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CART</title>
+  <style>
+    *{
+      margin: 0; padding: 0; box-sizing: border-box; font-family: sans-serif;
+    }
+    html{
+      background: #e5e5e5;
+    }
+    nav{
+      display: flex; justify-content: space-between; align-items: center; padding: 2rem 1.5rem; background: #3e92ff; height: 10vh;
+    }
+    nav ul{
+      list-style-type: none;  display: flex;  align-items: center;  gap: 10px;  text-transform: uppercase;
+    }
+    nav ul li a{
+      text-decoration: none; color: #fff; font-weight: 600;
+    }
+    .cart--img{ 
+      height: 1.4em; aspect-ratio: 1;
+    }
+    .btn{
+      border-radius: 2px; padding: 10px; background: #64ffa7; color: #555; 
+    }
+    input[type = "number"]{
+      width: 50px; padding: 10px;
+    }
+    .card{ background: #fff; display: flex; padding: 5px; gap: 10px; margin-bottom: 2px ;}
+    .image{ background: #eee; height: 120px; aspect-ratio: 1; }
+    .card--details{ display: flex; flex-direction: column; justify-content: center; flex: 2;align-items: start; }
+    .quantity{ flex: 1; display: flex; justify-content: center; align-items: center; }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="left--panel">
+        <ul>
+          <li><a href="./home.html">Home</a></li>
+          <li><a href="./books.html">Books</a></li>
+          <li><a href="./profile.html">Profile</a></li>
+        </ul>
+      </div>
+      <div class="right--panel">
+        <ul>
+          <li><a href="./login.html" class="login btn">Login</a></li>
+          <li><a href="./register.html" class="register btn">Register</a></li>
+          <li><a href="./cart.html"><img src="./cart-outline.svg" alt="CART" class="cart--img"/></a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="card">
+      <div class="image"></div>
+      <div class="card--details">
+        <strong>BOOK TITLE</strong>
+        <em>Author Name</em>
+      </div>
+      <div class="quantity">
+        <input type="number" name="" id="" value="1"> 
+        <small>QUANTITY</small>
+      </div>
+    </div>
+    <div class="card">
+      <div class="image"></div>
+      <div class="card--details">
+        <strong>BOOK TITLE</strong>
+        <em>Author Name</em>
+      </div>
+      <div class="quantity">
+        <input type="number" name="" id="" value="2"> 
+        <small>QUANTITY</small>
+      </div>
+    </div>
+    <div class="card">
+      <div class="image"></div>
+      <div class="card--details">
+        <strong>BOOK TITLE</strong>
+        <em>Author Name</em>
+      </div>
+      <div class="quantity">
+        <input type="number" name="" id="" value="1"> 
+        <small>QUANTITY</small>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

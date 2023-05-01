@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <style>
+        *{ box-sizing: border-box; }
+        form{ display: inline-block; border: 5px solid; width: 50vw; clear: both; }
+        fieldset{ border: none; }
+        .btn{ border: 1px solid; padding: 2px; }
+        input[type="submit"]{ background: #fff; border: 1px solid; padding: 2px; margin: 10px; float: right; }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <form>
+            <fieldset>
+                <label for="name">Enter name of your friend</label>
+                <input type="text" name="name" id="name" >
+            </fieldset>
+            <fieldset>
+                <input type="text" name="fileLabel" value="fileName" id="fileLabel"  disabled>
+                <label for="file" class="btn">Browse</label>
+                <input type="file" name="fileName" style="visibility: hidden;" id="file">
+            </fieldset>
+            <fieldset>
+                <p>What does the file contain</p>
+                <input type="checkbox" name="aboutFile" value="image" id="image">
+                <label for="image">Image</label>
+                <input type="checkbox" name="aboutFile" value="sourceCode" id="sourceCode">
+                <label for="sourceCode">Source Code</label>
+                <input type="checkbox" name="aboutFile" value="binCode" id="binCode">
+                <label for="binCode">Binary Code</label>
+            </fieldset>
+            <input type="submit" value="Submit Query">
+        </form>
+    </section>
+    <script>
+        $(document).ready(function(){
+            $("#file").change((e) => {
+                    const fileName = e.target.files[0].name;
+                    $("#fileLabel").val(fileName)
+            })
+
+        })
+    </script>
+</body>
+</html>

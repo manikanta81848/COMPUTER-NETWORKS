@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    *{margin: 0;padding: 0;box-sizing: border-box;font-family: 'Courier New', Courier, monospace;}
+    fieldset{border: none;}
+    form{display: flex;justify-content: center;align-items: center;flex-direction: column;gap: 1.5rem;max-height: 100vh;}
+    .btn{padding: 5px 10px;}
+  </style>
+  <title>Practical 3</title>
+</head>
+<body>
+  <form action="">
+    <h1>Customer Feedback</h1>
+    <fieldset>
+      <table>
+        <tr>
+          <td><label for="name">NAME </label></td>
+          <td> : </td>
+          <td><input type="text" name="name" id="name"/></td>
+        </tr>
+        <tr>
+          <td><label for="contact">CONTACT NO.  </label></td>
+          <td> : </td>
+          <td><input type="number" name="contact" id="contact" min="1000000000" max="9999999999"/></td>
+        </tr>
+      </table>
+    </fieldset>
+    <fieldset>
+      <h3>PREFFERED SHOPPING DAYS : </h3>
+      <div class="checkItem"><input type="checkbox" name="shopDay" id="mon" value="mon"/><label for="mon">Monday</label></div>
+      <div class="checkItem"><input type="checkbox" name="shopDay" id="tue" value="tue"/><label for="tue">Tuesday</label></div>
+      <div class="checkItem"><input type="checkbox" name="shopDay" id="wed" value="wed"/><label for="wed">Wednesday</label></div>
+      <div class="checkItem"><input type="checkbox" name="shopDay" id="thu" value="thu"/><label for="thu">Thursday</label></div>
+      <div class="checkItem"><input type="checkbox" name="shopDay" id="fri" value="fri"/><label for="fri">Friday</label></div>
+      <div class="checkItem"><input type="checkbox" name="shopDay" id="sat" value="sat"/><label for="sat">Saturday</label></div>
+      <div class="checkItem"><input type="checkbox" name="shopDay" id="sun" value="sun"/><label for="sun">Sunday</label></div>
+    </fieldset>
+    <fieldset>
+      <h3>Favourite Item: </h3>
+      <select name="favItem" id="favItem">
+        <option value="none">--NONE--</option>
+        <option value="item01">Chocolate</option>
+        <option value="item02">Ice Cream</option>
+        <option value="item03">Biscuits</option>
+        <option value="item04">Coffee</option>
+        <option value="item05">Maggi</option>
+      </select>
+    </fieldset>
+    <fieldset>
+      <h3>Suggestions : </h3>
+      <textarea name="suggestion" id="suggestion" cols="30" rows="10" placeholder="Please give your valuable feedback"></textarea>
+    </fieldset>
+    <fieldset>
+      <input class="btn" type="submit" value="SUBMIT" />
+      <input class="btn" type="reset" value="RESET" />
+    </fieldset>
+  </form>
+</body>
+</html>

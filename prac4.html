@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical 4</title>
+</head>
+<body>
+    <form action="submit.php" method="post">
+        <label for="filePath">File Path:</label>
+        <input type="text" id="filePath" name="filePath"><br><br>
+        
+        <label for="author">Author Name:</label>
+        <input type="text" id="author" name="author"><br><br>
+        
+        <label for="type">Type:</label>
+        <select id="type" name="type">
+          <option value="technical">Technical</option>
+          <option value="literary">Literary</option>
+          <option value="journal">Journal</option>
+        </select><br><br>
+        
+        <label for="subject">Subject Topic:</label>
+        <select id="subject" name="subject">
+          <option value="math">Mathematics</option>
+          <option value="physics">Physics</option>
+          <option value="chemistry">Chemistry</option>
+        </select><br><br>
+        
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+      </form>
+      
+</body>
+</html>
